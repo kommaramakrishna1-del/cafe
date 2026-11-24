@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew Bliss Café - Where every sip tells a story. Experience handcrafted coffee, fresh artisan pastries, and a warm cozy ambience.">
+  <title>Brew Bliss Café | Handcrafted Coffee & Artisan Delights</title>
+
+  <!-- Google Fonts: Playfair Display (Serif) & Poppins (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons (Free CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       SECTION 1: NAVIGATION BAR
+       - Sticky Header with backdrop filter
+       - Pure CSS Responsive Hamburger Menu (No JavaScript!)
+       - Navigation Links and Call-to-Action button
+       ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Café Logo & Name -->
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-mug-hot"></i></span>
+        <div class="logo-text">
+          <span class="brand-name">Brew Bliss</span>
+          <span class="brand-tagline">Artisan Café</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Hamburger Toggle (Checkbox Hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <!-- Navigation Menu Links -->
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#specials" class="nav-link">Specials</a></li>
+          <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#hours" class="nav-link">Hours</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Action Button -->
+        <a href="#contact" class="nav-cta-btn">
+          <i class="fa-solid fa-calendar-check"></i> Book a Table
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       SECTION 2: WELCOME / HERO SECTION
+       - Atmospheric background with warm coffee overlay
+       - Hero text, primary and secondary call-to-actions
+       - Quick Highlights Ribbon
+       ========================================================= -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <i class="fa-solid fa-seedling"></i> 100% Ethically Sourced Arabica
+        </div>
+        <h1 class="hero-title">Welcome to <span class="highlight">Brew Bliss</span> Café</h1>
+        <p class="hero-subtitle">Where Every Sip Tells a Story</p>
+        <p class="hero-description">
+          Step into a haven of warmth and rich aroma. From our masterfully roasted single-origin espresso beans to golden, oven-warm French croissants, every creation is handcrafted to elevate your coffee journey.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">
+            <span>Explore Our Menu</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#about" class="btn btn-secondary">
+            <span>Our Story</span>
+            <i class="fa-solid fa-book-open"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Features Ribbon -->
+      <div class="hero-features">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+          <div class="feature-text">
+            <h4>Freshly Roasted</h4>
+            <p>Single origin beans</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-bread-slice"></i></div>
+          <div class="feature-text">
+            <h4>Artisan Bakery</h4>
+            <p>Baked daily in-house</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-couch"></i></div>
+          <div class="feature-text">
+            <h4>Cozy Atmosphere</h4>
+            <p>Warm & relaxing spaces</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-wifi"></i></div>
+          <div class="feature-text">
+            <h4>Work & Chill</h4>
+            <p>Fast Wi-Fi & power hubs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 3: ABOUT OUR CAFÉ
+       - Split visual storytelling (Story + Image + Badges)
+       - Café atmosphere, quality, and hospitality points
+       ========================================================= -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Left: Image Composition with Floating Badge -->
+        <div class="about-image-wrapper">
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80" alt="Barista preparing artisan latte art at Brew Bliss Café" class="about-img" loading="lazy">
+            <div class="experience-badge">
+              <span class="badge-number">8+</span>
+              <span class="badge-text">Years of Coffee Craftsmanship</span>
+            </div>
+          </div>
+          <!-- Decorative accent shapes -->
+          <div class="pattern-dots"></div>
+        </div>
+
+        <!-- Right: Story & Atmosphere Description -->
+        <div class="about-content">
+          <div class="section-tag">
+            <i class="fa-solid fa-coffee-bean"></i> About Our Sanctuary
+          </div>
+          <h2 class="section-title">Brewed with Passion, Served with Warmth</h2>
+          <p class="about-text-lead">
+            At Brew Bliss Café, coffee is not just a morning beverage; it is a ritual, an art form, and a warm gathering place for creators, dreamers, and friends.
+          </p>
+          <p class="about-text">
+            Founded with a deep love for authentic coffee culture, we meticulously select high-altitude Arabica beans from sustainable, ethical farms. Our certified master baristas calibrate grind size, water temperature, and extraction pressure every single morning to ensure your cup is smooth, aromatic, and unforgettable.
+          </p>
+
+          <!-- Core Values -->
+          <div class="about-values">
+            <div class="value-card">
+              <div class="value-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="value-info">
+                <h4>Supreme Quality</h4>
+                <p>Grade-1 beans handpicked from small-batch sustainable growers.</p>
+              </div>
+            </div>
+            <div class="value-card">
+              <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
+              <div class="value-info">
+                <h4>Inviting Ambiance</h4>
+                <p>Earthy wooden textures, soft jazz melodies, and comfortable nooks.</p>
+              </div>
+            </div>
+            <div class="value-card">
+              <div class="value-icon"><i class="fa-solid fa-fire-burner"></i></div>
+              <div class="value-info">
+                <h4>Fresh Daily Bakes</h4>
+                <p>Flaky butter pastries and decadent brownies straight from our ovens.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-action">
+            <a href="#menu" class="btn btn-primary">
+              <span>View Full Menu</span>
+              <i class="fa-solid fa-utensils"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 4: OUR MENU
+       - Interactive food and beverage cards with modern styling
+       - Covers: Espresso, Cappuccino, Café Latte, Cold Coffee,
+                 Chocolate Brownie, Croissant
+       - Images, descriptions, tags, and prices
+       ========================================================= -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-list-check"></i> Handcrafted Selection</span>
+        <h2 class="section-title">Explore Our Signature Menu</h2>
+        <p class="section-subtitle">
+          Indulge in our carefully curated coffees and oven-baked delicacies made with love and the finest ingredients.
+        </p>
+        <div class="divider">
+          <span></span><i class="fa-solid fa-mug-hot"></i><span></span>
+        </div>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+
+        <!-- Item 1: Espresso -->
+        <article class="menu-card">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80" alt="Rich crema Espresso shot" class="card-img" loading="lazy">
+            <span class="category-badge hot-badge"><i class="fa-solid fa-fire"></i> Hot Brew</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <h3 class="card-title">Espresso</h3>
+              <span class="card-price">$3.25</span>
+            </div>
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="rating-num">(4.9)</span>
+            </div>
+            <p class="card-description">
+              A bold, intense shot of pure single-origin Arabica with a thick, golden hazelnut crema. The quintessential espresso experience.
+            </p>
+            <div class="card-footer-row">
+              <span class="serving-size"><i class="fa-regular fa-clock"></i> 30ml Shot</span>
+              <a href="#contact" class="card-btn" title="Order Espresso">
+                <i class="fa-solid fa-plus"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2: Cappuccino -->
+        <article class="menu-card">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80" alt="Velvety foamed Cappuccino with cocoa powder" class="card-img" loading="lazy">
+            <span class="category-badge hot-badge"><i class="fa-solid fa-fire"></i> Hot Brew</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <h3 class="card-title">Cappuccino</h3>
+              <span class="card-price">$4.50</span>
+            </div>
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span class="rating-num">(4.8)</span>
+            </div>
+            <p class="card-description">
+              Harmonious balance of dark espresso, velvety steamed whole milk, and an airy cloud of microfoam dusted with organic Ceylon cocoa.
+            </p>
+            <div class="card-footer-row">
+              <span class="serving-size"><i class="fa-regular fa-clock"></i> 220ml Mug</span>
+              <a href="#contact" class="card-btn" title="Order Cappuccino">
+                <i class="fa-solid fa-plus"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3: Café Latte -->
+        <article class="menu-card">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80" alt="Creamy Café Latte with Rosetta latte art" class="card-img" loading="lazy">
+            <span class="category-badge hot-badge"><i class="fa-solid fa-fire"></i> Hot Brew</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <h3 class="card-title">Café Latte</h3>
+              <span class="card-price">$4.75</span>
+            </div>
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="rating-num">(5.0)</span>
+            </div>
+            <p class="card-description">
+              Silky smooth espresso gently folded into creamy textured milk, topped with a delicate Rosetta design hand-poured by our baristas.
+            </p>
+            <div class="card-footer-row">
+              <span class="serving-size"><i class="fa-regular fa-clock"></i> 280ml Cup</span>
+              <a href="#contact" class="card-btn" title="Order Café Latte">
+                <i class="fa-solid fa-plus"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4: Cold Coffee -->
+        <article class="menu-card">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" alt="Chilled Cold Coffee with ice cubes and milk swirl" class="card-img" loading="lazy">
+            <span class="category-badge cold-badge"><i class="fa-solid fa-snowflake"></i> Chilled</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <h3 class="card-title">Cold Coffee</h3>
+              <span class="card-price">$4.95</span>
+            </div>
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="rating-num">(4.9)</span>
+            </div>
+            <p class="card-description">
+              Slow-steeped 18-hour cold brew blended with full-cream milk, crushed crystal ice, and a dash of Madagascar vanilla syrup.
+            </p>
+            <div class="card-footer-row">
+              <span class="serving-size"><i class="fa-regular fa-clock"></i> 350ml Glass</span>
+              <a href="#contact" class="card-btn" title="Order Cold Coffee">
+                <i class="fa-solid fa-plus"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 5: Chocolate Brownie -->
+        <article class="menu-card">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Fudgy Chocolate Brownie topped with dark chocolate ganache" class="card-img" loading="lazy">
+            <span class="category-badge bakery-badge"><i class="fa-solid fa-cookie-bite"></i> Bakery</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <h3 class="card-title">Chocolate Brownie</h3>
+              <span class="card-price">$3.95</span>
+            </div>
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="rating-num">(5.0)</span>
+            </div>
+            <p class="card-description">
+              Dense, fudgy dark Belgian chocolate brownie with roasted walnuts and a molten chocolate core, served warm with cocoa dusting.
+            </p>
+            <div class="card-footer-row">
+              <span class="serving-size"><i class="fa-regular fa-clock"></i> Served Warm</span>
+              <a href="#contact" class="card-btn" title="Order Chocolate Brownie">
+                <i class="fa-solid fa-plus"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 6: Croissant -->
+        <article class="menu-card">
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Golden flaky French Butter Croissant" class="card-img" loading="lazy">
+            <span class="category-badge bakery-badge"><i class="fa-solid fa-cookie-bite"></i> Bakery</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header-row">
+              <h3 class="card-title">Croissant</h3>
+              <span class="card-price">$3.50</span>
+            </div>
+            <div class="card-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span class="rating-num">(4.8)</span>
+            </div>
+            <p class="card-description">
+              Authentic French pastry with 72 gossamer-thin buttery layers. Crispy golden exterior, airy honeycomb interior, and delicate aroma.
+            </p>
+            <div class="card-footer-row">
+              <span class="serving-size"><i class="fa-regular fa-clock"></i> Freshly Baked</span>
+              <a href="#contact" class="card-btn" title="Order Croissant">
+                <i class="fa-solid fa-plus"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 5: SPECIAL ITEMS (CHEF'S RECOMMENDATION)
+       - Highlighted gourmet creations
+       - Exclusive "Chef's Recommendation" badge on each card
+       - Rich descriptions, prices, and visual styling
+       ========================================================= -->
+  <section class="specials section" id="specials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag special-tag"><i class="fa-solid fa-crown"></i> Exclusive Creations</span>
+        <h2 class="section-title">Chef's Handpicked Specials</h2>
+        <p class="section-subtitle">
+          Unique culinary combinations curated by our executive head barista and master pâtissier.
+        </p>
+        <div class="divider">
+          <span></span><i class="fa-solid fa-star"></i><span></span>
+        </div>
+      </div>
+
+      <!-- Specials Cards Grid -->
+      <div class="specials-grid">
+
+        <!-- Special 1 -->
+        <article class="special-card">
+          <div class="special-badge">
+            <i class="fa-solid fa-certificate"></i> Chef's Recommendation
+          </div>
+          <div class="special-img-box">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Hazelnut Praline Mocha with whipped cream" class="special-img" loading="lazy">
+          </div>
+          <div class="special-details">
+            <div class="special-top">
+              <span class="item-tag">Hot Specialty</span>
+              <span class="special-price">$5.95</span>
+            </div>
+            <h3 class="special-name">Hazelnut Praline Mocha</h3>
+            <p class="special-desc">
+              Double-shot ristretto infused with house-made roasted hazelnut paste, Swiss dark chocolate ganache, and crowned with toasted praline crumble.
+            </p>
+            <div class="special-meta">
+              <span><i class="fa-solid fa-fire-flame-curved"></i> 260 kcal</span>
+              <span><i class="fa-solid fa-heart"></i> Guest Favorite</span>
+            </div>
+            <a href="#contact" class="btn btn-special">Order Special</a>
+          </div>
+        </article>
+
+        <!-- Special 2 -->
+        <article class="special-card">
+          <div class="special-badge">
+            <i class="fa-solid fa-certificate"></i> Chef's Recommendation
+          </div>
+          <div class="special-img-box">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Spanish Vanilla Iced Latte in tall glass" class="special-img" loading="lazy">
+          </div>
+          <div class="special-details">
+            <div class="special-top">
+              <span class="item-tag">Iced Specialty</span>
+              <span class="special-price">$6.25</span>
+            </div>
+            <h3 class="special-name">Spanish Vanilla Iced Latte</h3>
+            <p class="special-desc">
+              Velvety condensed milk layered beneath iced Ethiopian cold brew, fragrant Tahitian vanilla bean extract, and cinnamon cloud foam.
+            </p>
+            <div class="special-meta">
+              <span><i class="fa-solid fa-snowflake"></i> Extra Chilled</span>
+              <span><i class="fa-solid fa-thumbs-up"></i> Top Rated</span>
+            </div>
+            <a href="#contact" class="btn btn-special">Order Special</a>
+          </div>
+        </article>
+
+        <!-- Special 3 -->
+        <article class="special-card">
+          <div class="special-badge">
+            <i class="fa-solid fa-certificate"></i> Chef's Recommendation
+          </div>
+          <div class="special-img-box">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80" alt="Belgian Truffle Brownie Royale served with berries" class="special-img" loading="lazy">
+          </div>
+          <div class="special-details">
+            <div class="special-top">
+              <span class="item-tag">Pastry Masterpiece</span>
+              <span class="special-price">$5.50</span>
+            </div>
+            <h3 class="special-name">Belgian Truffle Brownie Royale</h3>
+            <p class="special-desc">
+              Slow-baked 70% Valrhona dark chocolate brownie layered with silky truffle ganache, sea salt flakes, and fresh organic raspberry coulis.
+            </p>
+            <div class="special-meta">
+              <span><i class="fa-solid fa-cookie"></i> Gluten-Free Option</span>
+              <span><i class="fa-solid fa-star"></i> Award Winner</span>
+            </div>
+            <a href="#contact" class="btn btn-special">Order Special</a>
+          </div>
+        </article>
+
+        <!-- Special 4 -->
+        <article class="special-card">
+          <div class="special-badge">
+            <i class="fa-solid fa-certificate"></i> Chef's Recommendation
+          </div>
+          <div class="special-img-box">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Almond Butter Flaky Croissant with toasted almonds" class="special-img" loading="lazy">
+          </div>
+          <div class="special-details">
+            <div class="special-top">
+              <span class="item-tag">Bakery Highlight</span>
+              <span class="special-price">$4.75</span>
+            </div>
+            <h3 class="special-name">Almond Frangipane Croissant</h3>
+            <p class="special-desc">
+              Twice-baked butter croissant filled with luscious almond frangipane cream, dusted with powdered sugar and generously crusted with toasted sliced almonds.
+            </p>
+            <div class="special-meta">
+              <span><i class="fa-solid fa-clock"></i> Limited Daily Batch</span>
+              <span><i class="fa-solid fa-crown"></i> House Signature</span>
+            </div>
+            <a href="#contact" class="btn btn-special">Order Special</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 6: CUSTOMER REVIEWS
+       - Modern testimonial cards with avatars, star ratings,
+         and authentic guest feedback
+       ========================================================= -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-comments"></i> Guest Testimonials</span>
+        <h2 class="section-title">What Our Coffee Lovers Say</h2>
+        <p class="section-subtitle">
+          Real feedback from passionate guests who start their mornings and spend their afternoons with us.
+        </p>
+        <div class="divider">
+          <span></span><i class="fa-solid fa-quote-right"></i><span></span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="quote-watermark"><i class="fa-solid fa-quote-left"></i></div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Brew Bliss Café is my holy grail for morning coffee! Their Café Latte has the smoothest microfoam I've ever tasted, and the ambience is wonderfully peaceful for remote work. The staff greets everyone by name."
+          </p>
+          <div class="reviewer-info">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Sophia Carter - Regular Guest" class="reviewer-avatar" loading="lazy">
+            <div class="reviewer-meta">
+              <h4 class="reviewer-name">Sophia Carter</h4>
+              <span class="reviewer-role"><i class="fa-solid fa-check-circle"></i> Coffee Enthusiast & Writer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="quote-watermark"><i class="fa-solid fa-quote-left"></i></div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "The Chocolate Brownie paired with their Spanish Vanilla Iced Latte is an absolute revelation. You can truly taste the quality of single-origin beans and pure butter. Beautiful warm decor too!"
+          </p>
+          <div class="reviewer-info">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="David Miller - Food Critic" class="reviewer-avatar" loading="lazy">
+            <div class="reviewer-meta">
+              <h4 class="reviewer-name">David Miller</h4>
+              <span class="reviewer-role"><i class="fa-solid fa-check-circle"></i> Culinary Reviewer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="quote-watermark"><i class="fa-solid fa-quote-left"></i></div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Hands down the best croissants outside of Paris! Flaky, airy, and warm. Combined with the cozy seating and relaxing playlist, it's my go-to weekend escape. Highly recommended!"
+          </p>
+          <div class="reviewer-info">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Ananya Sharma - Architect" class="reviewer-avatar" loading="lazy">
+            <div class="reviewer-meta">
+              <h4 class="reviewer-name">Ananya Sharma</h4>
+              <span class="reviewer-role"><i class="fa-solid fa-check-circle"></i> Architectural Designer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 7: OPENING HOURS
+       - Clean, elegant schedule layout
+       - Weekday & Weekend hours
+       - Live status badge & Happy Hour announcement
+       ========================================================= -->
+  <section class="hours-section section" id="hours">
+    <div class="container">
+      <div class="hours-card">
+        <div class="hours-header">
+          <div class="hours-status-pill">
+            <span class="status-dot"></span> Open Today & Brewing Fresh
+          </div>
+          <h2 class="hours-title">Café Opening Hours</h2>
+          <p class="hours-subtitle">Come unwind with us. We are open 7 days a week to brew your happiness.</p>
+        </div>
+
+        <div class="hours-grid">
+          <!-- Weekdays Card -->
+          <div class="schedule-box">
+            <div class="schedule-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+            <h3 class="schedule-days">Monday – Friday</h3>
+            <div class="schedule-time">8:00 AM – 10:00 PM</div>
+            <p class="schedule-note"><i class="fa-solid fa-circle-info"></i> Full breakfast & espresso bar open all day</p>
+          </div>
+
+          <!-- Weekends Card -->
+          <div class="schedule-box weekend-box">
+            <div class="schedule-icon"><i class="fa-solid fa-sun"></i></div>
+            <h3 class="schedule-days">Saturday – Sunday</h3>
+            <div class="schedule-time">9:00 AM – 11:00 PM</div>
+            <p class="schedule-note"><i class="fa-solid fa-sparkles"></i> Artisan brunch menu & live acoustic sets</p>
+          </div>
+        </div>
+
+        <!-- Happy Hours Banner -->
+        <div class="happy-hours-banner">
+          <div class="banner-badge"><i class="fa-solid fa-tags"></i> Happy Hours</div>
+          <p class="banner-text">
+            <strong>Mon – Fri (4:00 PM – 6:00 PM):</strong> Enjoy <strong>20% off</strong> on all hand-crafted beverages and sweet bakes!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 8: LOCATION & CONTACT
+       - Address, Phone, Email
+       - Stylized Interactive Map Mockup
+       - Pure HTML Contact & Reservation Form
+       ========================================================= -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-location-dot"></i> Find & Reach Us</span>
+        <h2 class="section-title">Visit Our Café or Drop a Line</h2>
+        <p class="section-subtitle">
+          Whether you want to reserve a private corner table or just say hello, we’d love to hear from you.
+        </p>
+        <div class="divider">
+          <span></span><i class="fa-solid fa-envelope-open-text"></i><span></span>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info & Map Placeholder -->
+        <div class="contact-info-panel">
+          <h3 class="info-panel-title">Get In Touch</h3>
+          <p class="info-panel-desc">
+            Conveniently nestled in the vibrant heart of the city, just a 2-minute stroll from Central Metro Station.
+          </p>
+
+          <div class="contact-cards-list">
+            <!-- Address -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+              <div class="contact-text">
+                <h4>Café Address</h4>
+                <p>42 Roasted Bean Lane, Heritage Square, New Delhi, 110001</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+              <div class="contact-text">
+                <h4>Phone Numbers</h4>
+                <p><a href="tel:+911123456789">+91 11 2345 6789</a> / <a href="tel:+919876543210">+91 98765 43210</a></p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email Address</h4>
+                <p><a href="mailto:hello@brewblisscafe.com">hello@brewblisscafe.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stylized Map Placeholder -->
+          <div class="map-placeholder">
+            <div class="map-overlay-content">
+              <div class="map-pin-pulse">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h4>Brew Bliss Café Location</h4>
+              <p>Heritage Square Central, Main Boulevard</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="map-direction-btn">
+                <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact & Table Booking Form -->
+        <div class="contact-form-panel">
+          <h3 class="form-panel-title">Reserve a Table / Send Message</h3>
+          <p class="form-panel-desc">Fill in the details below and we’ll reserve your spot promptly.</p>
+
+          <form action="#contact" method="get" class="cafe-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name"><i class="fa-solid fa-user"></i> Your Name</label>
+                <input type="text" id="full-name" name="name" placeholder="e.g. John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email-addr"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                <input type="email" id="email-addr" name="email" placeholder="e.g. john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone-number"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                <input type="tel" id="phone-number" name="phone" placeholder="e.g. +91 98765 43210" required>
+              </div>
+              <div class="form-group">
+                <label for="guests-count"><i class="fa-solid fa-users"></i> Number of Guests</label>
+                <select id="guests-count" name="guests">
+                  <option value="1">1 Person (Solo Coffee & Work)</option>
+                  <option value="2" selected>2 Persons (Cozy Date / Chat)</option>
+                  <option value="3-4">3 to 4 Persons (Small Group)</option>
+                  <option value="5+">5+ Persons (Party / Meeting)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reservation-date"><i class="fa-solid fa-calendar"></i> Reservation Date</label>
+                <input type="date" id="reservation-date" name="date">
+              </div>
+              <div class="form-group">
+                <label for="reservation-time"><i class="fa-solid fa-clock"></i> Preferred Time</label>
+                <select id="reservation-time" name="time">
+                  <option value="morning">Morning (8:00 AM – 11:30 AM)</option>
+                  <option value="afternoon" selected>Afternoon (12:00 PM – 4:00 PM)</option>
+                  <option value="evening">Evening (4:30 PM – 8:00 PM)</option>
+                  <option value="night">Late Night (8:30 PM – Closing)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="special-notes"><i class="fa-solid fa-comment-dots"></i> Special Requests / Message</label>
+              <textarea id="special-notes" name="message" rows="4" placeholder="Let us know if you need high chairs, quiet table for work, celebration setup, or dietary preferences..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+              <span>Confirm Reservation / Send</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECTION 9: FOOTER
+       - Café logo and description
+       - Quick navigation links
+       - Social media links
+       - Copyright & credits
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <!-- Column 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <a href="#home" class="footer-logo">
+          <span class="logo-icon"><i class="fa-solid fa-mug-hot"></i></span>
+          <span class="brand-name">Brew Bliss Café</span>
+        </a>
+        <p class="footer-about">
+          Crafting moments of warmth, bliss, and authentic coffee enjoyment since 2018. Where each batch of beans is roasted to perfection and served with genuine passion.
+        </p>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Our Story</a></li>
+          <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Signature Menu</a></li>
+          <li><a href="#specials"><i class="fa-solid fa-angle-right"></i> Chef's Specials</a></li>
+          <li><a href="#reviews"><i class="fa-solid fa-angle-right"></i> Customer Reviews</a></li>
+          <li><a href="#hours"><i class="fa-solid fa-angle-right"></i> Opening Hours</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Location & Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Featured Offerings -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Favorites</h4>
+        <ul class="footer-links">
+          <li><a href="#menu"><i class="fa-solid fa-check"></i> Single Origin Espresso</a></li>
+          <li><a href="#menu"><i class="fa-solid fa-check"></i> Classic Café Latte</a></li>
+          <li><a href="#menu"><i class="fa-solid fa-check"></i> 18-Hr Chilled Cold Coffee</a></li>
+          <li><a href="#menu"><i class="fa-solid fa-check"></i> Fudgy Chocolate Brownie</a></li>
+          <li><a href="#menu"><i class="fa-solid fa-check"></i> French Butter Croissants</a></li>
+          <li><a href="#specials"><i class="fa-solid fa-check"></i> Hazelnut Praline Mocha</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Newsletter & Quick Contact -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Coffee Club Newsletter</h4>
+        <p class="newsletter-desc">Subscribe to receive exclusive weekly brew guides, secret recipes, and special discounts.</p>
+        <form action="#home" method="get" class="newsletter-form">
+          <div class="newsletter-input-group">
+            <input type="email" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </form>
+        <div class="footer-contact-mini">
+          <p><i class="fa-solid fa-phone"></i> +91 11 2345 6789</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@brewblisscafe.com</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Brew Bliss Café</strong>. All Rights Reserved. Handcrafted with HTML5 & CSS3.
+        </p>
+        <div class="footer-credits">
+          <span>Designed with <i class="fa-solid fa-heart heart-icon"></i> for B.Tech Web Development Practical</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Anchor Button -->
+  <a href="#home" class="back-to-top" aria-label="Back to top of page">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+</body>
+</html>
